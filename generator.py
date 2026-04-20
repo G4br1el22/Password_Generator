@@ -13,16 +13,11 @@ def create_password(len, char):
 
 lenght = int(input("Type your password lenght: "))
 characters = ""
-print("Choose character types (separate by comma):")
-print("1 - Letters")
-print("2 - Digits")
-print("3 - Symbols")
-
 
 print("Choose character types that are going to be in your password:")
-letters = str(input("y/n: "))
-digits = str(input("y/n: "))
-symbols = str(input("y/n: "))
+letters = str(input("Letters y/n: "))
+digits = str(input("Digits y/n: "))
+symbols = str(input("Symbols y/n: "))
 
 # Letters
 
