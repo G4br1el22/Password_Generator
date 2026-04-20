@@ -63,7 +63,8 @@ This project is for educational purposes only.
 
 * Add a user-friendly interface  
 * Include more character options (additional symbols and variations)  
-* Refactor and improve code structure for better readability  
+* Refactor and improve code structure for better readability
+* Add support for generating passwords based on a custom "root" (user-defined base), with optional prefixes and suffixes  
 
 ## License
 
