@@ -1,6 +1,6 @@
-# Password Generator (v1)
+# Password Generator (v2)
 
-A simple password generator built with Python, created as an introduction to cybersecurity concepts and secure password practices.
+A simple and customized password generator built with Python, created as an introduction to cybersecurity concepts and secure password practices.
 
 ## Objective
 
@@ -15,6 +15,7 @@ This project was developed to practice basic Python programming and understand h
   * Digits (0-9)
   * Symbols (!@#$...)
 * Random password generation
+* Customized password generation
 
 ## Technologies
 
@@ -54,6 +55,7 @@ aK9dP2xL0qZb
 * Basic user input handling
 * Building dynamic strings based on conditions
 * Importance of randomness in password security
+* Applying clean code principles (modularity, readability, and reduced code duplication)
 
 ## Disclaimer
 
@@ -64,7 +66,6 @@ This project is for educational purposes only.
 * Add a user-friendly interface  
 * Include more character options (additional symbols and variations)  
 * Refactor and improve code structure for better readability
-* Add support for generating passwords based on a custom "root" (user-defined base), with optional prefixes and suffixes  
 
 ## License
 
