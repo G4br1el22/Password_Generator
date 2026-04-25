@@ -4,42 +4,34 @@ import string
 
 
 # Randomizing function
-def create_password(length, char):
-    random_string = ""
-    for i in range(length):
-        random_string += random.choice(char)
-    return random_string
+def create_password(length, chars):
+    return "".join(random.choice(chars) for _ in range(length))
 
 
-# Password length
+def charset():
+    print("Choose your character types:")
+    chars = ""
 
-length = int(input("Type your password lenght: "))
+    if input("Letters? y/n: ").lower() == "y":
+        chars += string.ascii_letters
+    if input("Digits? y/n: ").lower() == "y":
+        chars += string.digits
+    if input("Symbols? y/n: ").lower() == "y":
+        chars += string.punctuation
 
-# Setting and building characters
+    return chars
 
-characters = ""
 
-print("Choose character types that are going to be in your password:")
-letters = str(input("Letters y/n: ")).lower()
-digits = str(input("Digits y/n: ")).lower()
-symbols = str(input("Symbols y/n: ")).lower()
+def generate_password():
+    length = int(input("Type your password lenght: "))
+    chars = charset()
 
-# Letters
-if letters == "y":
-    characters += string.ascii_letters
+    if chars == "":
+        print("You must select at least one option!")
+        return
 
-# Digits
-if digits == "y":
-    characters += string.digits
+    print("Generated password: ")
+    print(create_password(length, chars))
 
-# Symbols
-if symbols == "y":
-    characters += string.punctuation
 
-# Validation
-
-if characters == "":
-    print("You must select at least one option!")
-else:
-    # Printing password
-    print(create_password(length, characters))
+generate_password()
