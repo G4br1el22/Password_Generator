@@ -8,6 +8,7 @@ def create_password(length, chars):
     return "".join(random.choice(chars) for _ in range(length))
 
 
+# Creating charset
 def charset():
     print("Choose your character types:")
     chars = ""
@@ -22,6 +23,7 @@ def charset():
     return chars
 
 
+# Creating password
 def generate_password():
     length = int(input("Type your password lenght: "))
     chars = charset()
@@ -34,4 +36,5 @@ def generate_password():
     print(create_password(length, chars))
 
 
+# Generating password
 generate_password()
